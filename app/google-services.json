@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "267091785056",
+    "firebase_url": "https://ixat-app.firebaseio.com",
+    "project_id": "ixat-app",
+    "storage_bucket": "ixat-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267091785056:android:6d9993d9bc0a35e4",
+        "android_client_info": {
+          "package_name": "com.prasanth.ixat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267091785056-fdelbg0rs6feoa5baj7ln27m3g0qm8q1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prasanth.ixat",
+            "certificate_hash": "2cfa390701c63ec47541c40efdecf63e91e6f7d6"
+          }
+        },
+        {
+          "client_id": "267091785056-pjegtetgdkka6pqkjpu2cod7lf0tqn4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCQHecIsAifIeu1N4qsD1UwmQCRCC-2K0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267091785056-pjegtetgdkka6pqkjpu2cod7lf0tqn4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

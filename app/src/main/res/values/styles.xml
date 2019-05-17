@@ -1,0 +1,47 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowAnimationStyle">
+            @style/CustomAnimationActivity
+        </item>
+    </style>
+
+    <style name="CustomAnimationActivity"
+        parent="@android:style/Animation.Activity">
+
+        <item name="android:activityOpenEnterAnimation">
+            @anim/slide_in_right
+        </item>
+
+        <item name="android:activityOpenExitAnimation">
+            @anim/slide_in_left
+        </item>
+
+        <item name="android:activityCloseExitAnimation">
+            @anim/slide_out_right
+        </item>
+
+        <item name="android:activityCloseEnterAnimation">
+            @anim/slide_out_left
+        </item>
+
+    </style>
+    
+    <style name="AppTheme.ActivityExitTheme">
+
+        <item name="android:windowIsTranslucent">
+            true
+        </item>
+
+        <item name="android:windowBackground">
+            @android:color/transparent
+        </item>
+    </style>
+
+</resources>

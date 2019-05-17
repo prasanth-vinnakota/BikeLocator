@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RideCostDisplayActivity"
+    android:padding="50sp"
+    android:orientation="vertical">
+
+    <TextView
+        android:drawableTop="@mipmap/ixat"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:textColor="#000"
+        android:text="@string/ride_cost"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:layout_marginTop="50sp"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@mipmap/prime_car"
+        android:id="@+id/ride_type_icon"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="30sp"
+        android:text="@string/ride_distance"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="30sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:background="#11000000"
+        android:gravity="center"
+        android:id="@+id/ride_distance"
+        android:text="@string/_2_5_km"/>
+
+    <TextView
+        android:layout_marginTop="15sp"
+        android:layout_width="300sp"
+        android:layout_height="30sp"
+        android:text="@string/ride_cost"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="30sp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:background="#11000000"
+        android:gravity="center"
+        android:id="@+id/ride_cost"
+        android:text="@string/rs_925"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300sp"
+        android:layout_height="35sp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="25sp"
+        android:layout_marginTop="15sp"
+        android:elevation="10sp"
+        android:layout_marginBottom="20sp">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/amount_received"
+        android:id="@+id/amount_received"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"/>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

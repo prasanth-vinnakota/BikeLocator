@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RiderMapActivity">
+
+
+    <Button
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:drawableRight="@mipmap/zoom_in"
+        android:layout_marginRight="30sp"
+        android:layout_gravity="right|center"
+        android:layout_marginBottom="60sp"
+        android:id="@+id/zoomIn"
+        android:background="@null" />
+
+    <Button
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginRight="30sp"
+        android:drawableRight="@mipmap/zoom_out"
+        android:layout_gravity="right|center"
+        android:id="@+id/zoomOut"
+        android:background="@null" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/black"
+            android:text="@string/prasanth_vinnakota"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="60sp"
+            android:layout_height="45sp"
+            android:src="@mipmap/ixat"
+            android:id="@+id/app_icon" />
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="60sp"
+            android:layout_height="45sp"
+            android:layout_gravity="end"
+            android:background="@null"
+            android:drawableLeft="@mipmap/menu" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25sp"
+            android:text="@string/available"
+            android:textSize="18sp"
+            android:id="@+id/rider_available"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customerInfo"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:alpha="0.9"
+        android:visibility="gone"
+        android:layout_marginBottom="45sp">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:id="@+id/customerProfilePic"
+            android:src="@mipmap/default_profile_pic"
+            android:padding="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/customerName"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:textColor="#05193C"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/customerTel"
+                android:paddingBottom="10sp"
+                android:textColor="#05193C"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/customerDestination"
+                android:paddingBottom="10sp"
+                android:textColor="#05193C"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ToggleButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textOff="@string/start_ride"
+        android:textOn="@string/end_ride"
+        android:id="@+id/ride_status"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"/>
+
+    <!--<SwipeButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="@string/enter_otp"
+        android:id="@+id/enter_otp"
+        android:background="#000"
+        android:textColor="#fff"
+        android:visibility="gone"/>-->
+
+    <com.ebanx.swipebtn.SwipeButton
+        android:layout_width="300sp"
+        android:layout_height="30sp"
+        android:layout_gravity="bottom|center"
+        app:inner_text="@string/enter_otp"
+        app:inner_text_size="20sp"
+        android:id="@+id/enter_otp"
+        app:button_image_disabled="@mipmap/swipe"
+        android:visibility="gone"/>
+
+
+</FrameLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OfflineActivity"
+    android:background="@drawable/background"
+    android:alpha="0.6">
+
+    <ImageView
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_height="200sp"
+        android:src="@mipmap/ixat" />
+
+    <TextView
+        android:id="@+id/offline_message1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/offline_message1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_alignTop="@+id/offline_message1"
+        android:layout_marginTop="20sp"
+        android:id="@+id/offline_message2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/offline_message2"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80sp"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/book_offline"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/book_offline" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/go_online"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/go_online"/>
+</RelativeLayout>
