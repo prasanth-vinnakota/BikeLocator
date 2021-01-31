@@ -64,7 +64,7 @@
         android:id="@+id/ride_cost"
         android:text="@string/rs_925"/>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="300sp"
         android:layout_height="35sp"
         android:layout_gravity="center"
@@ -81,6 +81,6 @@
         android:background="@android:color/transparent"
         android:layout_gravity="center"/>
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

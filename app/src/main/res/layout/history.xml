@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HistoryActivity"
     android:background="@android:color/white">
 
@@ -13,7 +12,7 @@
         android:orientation="vertical"
         android:id="@+id/ride_history_layout">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar_history"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,7 +28,7 @@
                 style="?android:attr/progressBarStyle"
                 android:layout_gravity="end" />
 
-        </android.support.v7.widget.Toolbar>
+        </androidx.appcompat.widget.Toolbar>
 
     <fragment
         android:id="@+id/map"
